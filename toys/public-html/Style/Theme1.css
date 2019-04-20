@@ -1,0 +1,1461 @@
+
+body {
+background-color:#fff;
+position:relative;
+z-index:-10;
+
+overflow-x:hidden;
+
+
+
+
+}
+
+.body_in
+{
+	margin-top:-500px;
+	background:url(../Images/grass1.png)repeat-x bottom;
+	position:relative;
+	z-index:10;
+	
+	
+}
+
+.header
+{
+	margin:0px;
+	padding:0px;
+	margin-top:-560px;
+	position: relative;
+	z-index:15;
+	height:570px;
+}
+
+.gvb
+{
+	width:40%;
+	float:right;
+	margin:0px;
+	padding:0px;
+	margin-top:30px;
+}
+
+.gvb img
+{
+	width:35px;
+	height:35px;
+	
+		float:left;
+}
+
+
+.gvb h6
+{
+	margin-left:30px;
+	font-family:"Lithos Pro Regular";
+	font-weight:bold;
+	float:left;
+	font-size:14px;
+}
+
+.gvb_g1
+{
+	background:url(../Images/cloud.png)no-repeat;
+	width:100px;
+	height:60px;
+		float:left;
+		margin-right:20px;
+		-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.gvb_g2
+{
+	background:url(../Images/cloud.png)no-repeat;
+	width:100px;
+	height:60px;
+		float:left;
+		margin-top:40px;
+		-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.gvb_g3
+{
+	background:url(../Images/cloud.png)no-repeat;
+	width:100px;
+	height:60px;
+	float:left;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.gvb_g1:hover,.gvb_g2:hover,.gvb_g3:hover {
+	-webkit-animation: bounce 0.5s;
+	-moz-animation: bounce 0.5s;
+	-o-animation: bounce 0.5s;
+	animation: bounce 0.5s;
+	
+}
+
+.company
+{
+	width:65%;
+	float:right;
+	margin:0px;
+	padding:0px;
+	margin-top:30px;
+	margin-right:50px;
+}
+
+
+.company img
+{
+	width:100px;
+	height:50px;
+}
+
+.company h1
+{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	color:#fff;
+	font-family:"Lithos Pro Regular";
+	font-size:36px;
+	text-shadow:#000 2px 2px;
+	width:55%;
+	margin-top:40px;
+	
+	font-weight:bold;
+}
+
+
+
+
+.body_middle
+{
+	background-color:#668a0d;
+	margin-top:-120px;
+	position:relative;
+	z-index:1;
+	
+}
+
+
+
+.container
+{
+	width:980px;
+	position:relative;
+	z-index:18;
+	
+	
+}
+
+
+#clouds{
+	padding: 100px 0;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+
+
+.menu
+{
+	width:80%;
+	float:left;
+	margin:0px;
+	padding:0px;
+	margin-top:150px;
+	
+}
+
+/*.menu ul
+{
+	width:100%;
+	float:left;
+}
+
+.menu ul a
+{
+	width:20%;
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	color:#fff;
+	float:left;
+	
+}
+
+.menu ul a li
+{
+	width:100%;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	list-style:none;
+	float:left;
+	background:url(../Images/button.png)no-repeat;
+}
+
+*/
+
+
+#tablet {
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			min-height: 130px;
+			text-align: center;
+			list-style: none;
+			float:left;
+			}
+			
+		#tablet li {
+			margin-right: 15px;
+			width: 130px;
+			height: 66px;
+			position: relative;
+			float: left;
+
+			}
+			#tablet li a
+			{
+				padding-top:10px;
+			}
+			
+			
+		#tablet a, #tablet a:visited, #tablet a, #tablet a:hover {
+			margin: 0 auto;
+						margin-bottom:10px;
+			width: 130px;
+			height: 66px;
+			overflow: hidden;
+			border: 0;
+			background: url(../Images/button1.png) no-repeat;
+			display: block;
+			position: relative;
+			z-index: 2;
+			text-decoration:none;
+			color:#fff;
+			}
+			#tablet li img.shadow {
+			width:130px;
+			height:33px;
+
+			margin: 0 auto;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			
+			}
+			
+	
+	.main
+	{
+		width:100%;
+		margin-top:-50px;
+	}
+	
+			
+.left
+{
+	width:67%;
+	float:left;
+	margin:0px;
+	padding:0px;
+	background:url(../Images/content_back.png);
+	-webkit-border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-o-border-radius: 20px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;
+	padding:3%;
+}
+
+
+
+.welcome
+{
+	margin:0px;
+	padding:0px;
+	float:right;
+	width:100%;
+}
+
+.welcome h2
+{
+	margin:0px;
+	padding:0px;
+	color:#fff;
+	font-size:20px;
+	font-family:"Lithos Pro Regular";
+	font-weight:bold;
+	text-shadow:#000 2px 2px;
+	margin-bottom:10px;
+
+		
+}
+
+.products_img
+{
+	margin:0px;
+	padding:0px;
+	width:24%;
+	
+	float:left;
+	
+	
+}
+
+.products_img h5
+{
+	color:#fff;
+}
+
+
+
+
+#light_pic
+{
+	margin-bottom:30px;
+}
+
+
+#light_pic img
+{
+	margin-top:20px;
+	width:100px;
+	height:100px;
+	margin-bottom:10px;
+	border:#FC0 solid 2px;
+}
+
+.gallery img
+{
+	border:#f9ad00 solid 2px;
+	
+	
+}
+
+
+
+.welcome p
+{
+
+	padding:0px;
+	color:#fff;
+	font-size:12px;
+	text-align:justify;
+	text-indent:3em;
+	line-height:26px;
+	
+}
+
+
+.enquiry
+{
+	width:130px;
+	height:30px;
+	float:right;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+}
+
+#view_more
+{
+	text-decoration:none;
+	
+
+	padding:0px;
+	text-align:center;
+	background:url(../Images/button.png)no-repeat;
+		color:#fff;
+	padding-top:10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#view_more:hover
+{
+	background:url(../Images/button1.png)no-repeat;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+
+
+#contact
+{
+	text-decoration:none;
+	
+
+	padding:0px;
+	text-align:center;
+	background:url(../Images/button.png)no-repeat;
+		color:#fff;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	width:130px;
+	height:40px;
+	margin-right:50px;
+}
+
+#contact:hover
+{
+	background:url(../Images/button1.png)no-repeat;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.right
+{
+	width:20%;
+	float:right;
+	margin:0px;
+	padding:0px;
+	
+}
+
+
+
+.cat
+{
+	margin:0px;
+	padding:0px;
+	float:left;
+	
+	margin-top:20px;
+	width:100%;
+	
+	
+
+	
+}
+
+.cat h2
+{
+	margin:0px;
+	padding:0px;
+	text-align:left;
+	color:#fff;
+	font-size:20px;
+	font-family:"Lithos Pro Regular";
+	font-weight:bold;
+	text-shadow:#000 2px 2px;
+	background:url(../Images/product_back.png)repeat-x;
+	padding-left:20px;
+	margin-left:-30px;
+	padding-bottom:10px;
+	
+
+
+}
+
+.cat ul
+{
+	margin:0px;
+	padding:0px;
+	float:left;
+	width:100%;
+	margin-bottom:20px;
+
+}
+
+.cat ul li
+{
+	margin:0px;
+	padding:0px;
+
+	list-style:url(../Images/list-style.png);
+	vertical-align:middle;
+	margin-bottom:0px;
+
+
+}
+
+.cat ul li a
+{
+	margin:0px;
+	text-decoration:none;
+	color:#fff;
+	font-size:14px;
+	
+}
+
+.cat ul li a:hover
+{
+	
+	color:#f9ad00;
+}
+
+
+
+
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	width: 150px;
+	height: 200px;
+	margin: 0 auto;
+	text-align:center;
+border-radius:0px 0px 10px 10px;
+-o-border-radius:0px 0px 10px 10px;
+-ms-border-radius:0px 0px 10px 10px;
+-moz-border-radius:0px 0px 10px 10px;
+webkit-border-radius:0px 0px 10px 10px;
+
+padding-bottom:0px;
+padding-top:10px;
+
+background:#ffffff;
+
+/*background:-moz-linear-gradient(left, #fff, #000000 50%, #9abb24) no-repeat center top;
+background:-webkit-linear-gradient(left, #9abb24, #000000 50%, #9abb24) no-repeat center top;
+background:-o-linear-gradient(left, #9abb24, #000000 50%, #9abb24) no-repeat center top;
+background:linear-gradient(left, #9abb24, #000000 50%, #9abb24) no-repeat center top;
+background:-ms-linear-gradient(left, #9abb24, #000000 50%, #9abb24) no-repeat center top;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9abb24', endColorstr='#000000',GradientType=100% );
+*/}
+#lightbox-container-image { padding: 1px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+
+
+border-radius:10px 10px 0px 0px;
+-o-border-radius:10px 10px 0px 0px;
+-ms-border-radius:10px 10px 0px 0px;
+-moz-border-radius:10px 10px 0px 0px;
+webkit-border-radius:10px 10px 0px 0px;
+background:#ffffff;
+/*background:-moz-linear-gradient(top, #9abb24, #000000 50%, #9abb24) no-repeat center top;
+background:-webkit-linear-gradient(top, #9abb24, #000000 50%, #9abb24) no-repeat center top;
+background:-o-linear-gradient(top, #9abb24, #000000 50%, #9abb24) no-repeat center top;
+background:linear-gradient(top, #9abb24, #000000 50%, #9abb24) no-repeat center top;
+background:-ms-linear-gradient(top, #9abb24, #000000 50%, #9abb24) no-repeat center top;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9abb24', endColorstr='#000000',GradientType=100% );
+*/
+
+/*border:solid 1px #fff;*/
+
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #000; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 50%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	width: 30px; 
+        height: 30px;
+	float: right;
+        margin-right: -15px;
+	padding-bottom: 5px;
+        text-align: center;
+        padding-right: 0px;
+		padding-top:5px;
+}
+#titletext
+{
+font-family:Arial;
+font-size:18px;
+margin-top:12px;
+font-weight:bold;
+text-align:left;
+padding-left:10px;
+color:#000;
+width:80%;
+float:left;
+text-shadow:0px 0px 1px #ccc;
+-o-text-shadow:0px 0px 1px #000000;
+-ms-text-shadow:0px 0px 1px #000000;
+-moz-text-shadow:0px 0px 1px #000000;
+-webkit-text-shadow:0px 0px 1px #000000;
+text-transform: capitalize;
+}
+
+
+.cat marquee
+{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	margin-top:5px;
+	float:left;
+}
+
+.cat marquee img
+{
+	width:150px;
+	height:150px;
+	margin-left:20px;
+	margin-bottom:60px;
+}
+
+
+
+
+.foot
+{
+margin:0px;
+padding:0px;
+background:url(../Images/product_back.png)repeat-x bottom;
+
+}
+
+.inside
+{
+margin:0px;
+padding:0px;
+margin-left:0px;
+float:left;
+width:96%;
+padding:2%;
+padding-top:0.5%;
+padding-bottom:2%;
+}
+
+.footer
+{
+margin:0px;
+padding:0px;
+
+}
+
+.footer_left
+{
+margin:0px;
+padding:20px;
+padding-top:10px;
+padding-left:0px;
+width:31%;
+float:left;
+color:#fff;
+}
+
+.footer_left h6
+{
+margin:0px;
+padding:0px;
+color:#fff;
+font-size:12px;
+}
+
+.footer_left p
+{
+margin:0px;
+padding:0px;
+color:#fff;
+font-size:12px;
+}
+
+
+.footer_left p a
+{
+margin:0px;
+padding:0px;
+color:#f9ad00;
+}
+
+.footer_left p a:hover
+{
+	color:#f9ad00;
+}
+
+
+.footer_menu
+{
+margin:0px;
+padding:0px;
+float:left;
+width:42%;
+margin-top:25px;
+}
+
+.footer_menu ul
+{
+margin:0px;
+padding:0px;
+float:left;
+width:100%;
+}
+
+
+.footer_menu ul li
+{
+margin:0px;
+padding:0px;
+width:19%;
+list-style:none;
+text-align:center;
+color:#fff;
+float:left;
+}
+
+
+.footer_menu ul li a
+{
+margin:0px;
+padding:0px;
+list-style:none;
+color:#fff;
+text-decoration:none;
+font-size:12px;
+}
+
+
+.footer_menu ul li a:hover
+{
+	color:#f9ad00;
+
+}
+
+.footer_logo
+{
+margin:0px;
+padding:0px;
+width:17%;
+float:right;
+margin-top:7px;
+margin-right:10px;
+}
+
+
+
+
+#product img
+{
+	width:150px;
+	height:150px;
+	float:right;
+
+}
+
+.products_des
+{
+	margin:0px;
+	padding:0px;
+	width:70%;
+	float:left;
+	margin-left:30px;
+}
+
+.products_des h3
+{
+	font-size:18px;
+	font-weight:normal;
+	color:#ff0;
+	margin-left:0px;
+	width:100%;
+	float:right;
+	text-align:left;
+        text-transform: capitalize;
+		font-family:"Lithos Pro Regular";
+		font-weight:bold;
+		text-shadow:#000 2px 2px;
+		
+}
+
+.products_des h3 a
+{
+	color:#ff0;
+	text-decoration:none;
+        text-transform: capitalize;
+		
+}
+
+
+.products_des p
+{
+	margin-top:0px;
+	margin-bottom:5px;
+	color:#fff;
+	width:100%;
+}
+
+
+.productdetails
+{	float:left;
+	/*display:none;*/
+	margin:0px;
+    width:100%;
+    padding:0%;
+	margin-bottom:30px;
+	
+	    
+}
+
+
+.productdetailsname
+{
+    margin:0px;
+    padding:0px;
+    width:100%;
+
+    float:left;
+    text-align:left;
+    margin-top:5px;
+    color:#ff0;
+    font-size:18px;
+    font-weight:bold;
+	border-bottom:#ff0 solid 1px;
+	padding-bottom:5px;
+        text-transform: capitalize;
+		font-family:"Lithos Pro Regular";
+		font-weight:bold;
+		text-shadow:#000 2px 2px;
+
+}
+.productdetailsclose
+{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    text-align:right;
+    margin-bottom:10px;
+	background:url(../Images/Close.gif) no-repeat right;
+}
+.productdetails1
+{	
+	
+    margin:0 0 10px 0;
+    padding:1%;
+    width:98%;
+
+}
+.productdetailsimage
+{
+    margin:0px;
+    padding:0px;
+    width:37.7%;
+    padding:0.2%;
+    float:left;
+    background-color:#ff0;
+}
+.productdetailsimage img
+{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height: 200px;
+}
+.paymentdiv
+{
+    margin:0px;
+    padding:0px;
+    width:55%;
+    padding:1%;
+       float:right;
+}
+.productlable
+{
+    margin:0px;
+    padding:0px;
+    width:96%;
+    padding:2%;
+    color:#ff0;
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.leftlabel
+{
+    margin:0px;
+    padding:0px;
+    width:40%;
+    float:left;
+    text-align:left;
+	color:#fff;
+}
+.colondiv
+{
+    margin:0px;
+    padding:0px;
+    width:1%;
+    margin-right:2%;
+    margin-left:2%;
+    text-align:left;
+}
+.rightlabel
+{
+    margin:0px;
+    padding:0px;
+    width:40%;
+    float:left;
+    text-align:left;
+}
+.costdiv
+{
+    color:#ff0;
+    font-size:14px;
+}
+
+.productdetails2
+{
+    margin:0px;
+    padding:0px;
+    width:97.5%;
+    padding:1%;
+    font-size:12px;
+    font-weight:bold;
+    margin-top:10px;
+	color:#ff0;
+	border:#ff0 solid 1px;
+}
+.productdetails21
+{
+    margin:0px;
+    padding:0px;
+    width:98%;
+    padding:1%;
+	color:#ff0;
+	
+}
+
+.productdetails21 h6
+{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	float:left;
+	color:#fff;
+}
+
+.productdetails21 p
+{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	float:left;
+	color:#ff0;
+}
+
+
+
+.productdetails211
+{
+    margin:0px;
+    padding:0px;
+    width:47%;
+    padding:1%;
+    float:left;
+	color:#ff0;
+}
+.productdetails212
+{
+    margin:0px;
+    padding:0px;
+    width:47%;
+    padding:1%;
+    float:right;
+	color:#FF0;
+
+}
+.productlable h4
+{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    font-weight:bold;
+	color:#fff;
+}
+
+
+
+
+
+.sendmaildiv
+{
+    margin:0px;
+    padding:0px;
+    width:90%;
+    padding:5%;
+    padding-top: 0px;
+}
+
+#sendmailform
+{
+    margin:0px;
+    padding:0px;
+    width:96%;
+    padding:2%;
+	
+
+}
+#sendmailform h3
+{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    text-align:center;
+    color:#ff3600;
+
+    background:none;
+    text-shadow:0px 0px 2px #000000;
+    -o-text-shadow:0px 0px 2px #000000;
+    -ms-text-shadow:0px 0px 2px #000000;
+    -moz-text-shadow:0px 0px 2px #000000;
+    -webkit-text-shadow:0px 0px 2px #000000;
+
+
+    margin-bottom:20px;
+
+    margin-top:10px;
+}
+.datadiv
+{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.datalabel
+{
+    margin:0px;
+    padding:0px;
+    width:30%;
+    padding-left:5%;
+    float:left;
+    color:#000000;
+    font-size:13px;
+    font-weight:bold;
+    text-align:left;
+    margin-top:9px;
+}
+.datatext
+{
+    margin:0px;
+    padding:0px;
+    width:62.5%;
+    float:right;
+    text-align:right;
+    padding-right:2%;
+}
+
+.textarea
+{
+    margin:0px;
+    padding:0px;
+    width:300px;
+    padding:2%;
+
+    height:100px;
+
+     color:#ff3600;
+    color:#000000;
+    font-weight:bold;
+    font-size:12px;
+}
+
+.textbox
+{
+    margin:0px;
+    padding:0px;
+    padding:3px;
+     font-size:12px;
+    color:#000000;
+    font-weight:bold;
+    width:98%;
+
+	
+    
+}
+.textboxActive
+{
+    margin:0px;
+    padding:0px;
+    padding:2%;
+    color:#CCCCCC;
+
+    font-size:12px;
+    color:#000000;
+    font-weight:bold;
+    width:98%;
+}
+
+#txtmsg
+{
+    width: 300px;
+	
+height:150px;
+margin-bottom:20px;
+margin-top:10px;
+background-color:#fff;
+color:#000;
+font:Arial, Helvetica, sans-serif;
+    }
+    
+	
+    .hintTextbox
+{
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 5px;
+	margin-top:10px;
+background:url(../Images/border.png);
+
+
+	    }
+	
+	
+
+	
+    .row
+    {
+        width: 300px;
+		color:#fff;
+		
+    }
+	
+	
+
+	.address
+{
+	margin:0px;
+	padding:0px;
+	width:30%;
+	float:right;
+	margin-right:20px;
+		padding:20px;
+}
+.add_details
+{
+margin:0px;
+padding:0px;
+font-size:12px;
+font-weight:bold;
+color:#ff0;
+
+}
+
+.address h3
+{
+	color:#fff;
+	text-decoration:underline;
+}
+
+
+.format
+{
+	margin-left:30px;
+	margin-bottom:20px;
+	
+}
+
+
+
+
+
+
+.page_link
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100
+
+}
+.page_link a
+{
+    text-decoration: none;
+}
+#pagination
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    
+    font-size: 11px;
+font-weight: bold;
+color: #0d0403;
+}
+
+.center
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+.center img
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wordwrap
+{
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+}
+
+INPUT.hintTextboxActive
+{ 
+    margin:0px;
+    padding:0px;
+    width:300px;
+    padding:1%;
+
+    
+
+    font-weight: bold;
+
+    color: #000;
+
+    
+
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+    background-color:#ff0;
+	
+	border:solid 1px #ff0;
+
+
+}
+INPUT.hintTextbox
+{
+    margin:0px;
+    padding:0px;
+    width:300px;
+    padding:1%;
+
+   
+
+    font-weight: bold;
+
+     color: #000;
+
+	border:solid 1px #bb9582;
+
+    -webkit-transition: all 4500ms ease;
+    -moz-transition: all 4500ms ease;
+    -o-transition: all 4500ms ease;
+    -ms-transition: all 4500ms ease;
+    transition: all 4500ms ease;
+     background-color:#fff;
+     margin-bottom: 10px;
+
+
+}
